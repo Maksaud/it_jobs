@@ -1,0 +1,52 @@
+{
+  "revision_id": "149fda3ecff24894404c8e183104c86edc42d0694506f3b3aad11e6c17039d42",
+  "name": "it_jobs",
+  "run_list": [
+    "recipe[it_jobs::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "it_jobs": {
+      "version": "0.1.0",
+      "identifier": "f96dda6e28f76648134440323f73e57aea352cf7",
+      "dotted_decimal_identifier": "70208054119429990.20287382178905971.252316078124279",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/Maksaud/maksaudeng54_Python_env_project_project.git",
+        "revision": "95b5749b50e6aa98623767edf15e8b8da74109c0",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/dev",
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "it_jobs",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "it_jobs (0.1.0)": [
+
+      ]
+    }
+  }
+}
