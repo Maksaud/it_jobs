@@ -7,6 +7,8 @@ apt_update 'update_sources' do
   action :update
 end
 
+package 'packer'
+
 package 'python3-pip'
 
 remote_directory '/home/ubuntu/requirements' do
