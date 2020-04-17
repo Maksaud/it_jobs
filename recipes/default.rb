@@ -25,7 +25,6 @@ bash 'installing_from_requirements.txt' do
   sudo pip3 install -r /home/ubuntu/requirements/requirements.txt
   EOH
 end
-
 # For Chef Tests
 directory '/home/vagrant/Downloads' do
   owner 'root'
