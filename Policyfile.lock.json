@@ -1,5 +1,5 @@
 {
-  "revision_id": "149fda3ecff24894404c8e183104c86edc42d0694506f3b3aad11e6c17039d42",
+  "revision_id": "f0b1d48e0603fd71fdfd626757f127bbfb8cca7c1b18df6b1735b710261b90ca",
   "name": "it_jobs",
   "run_list": [
     "recipe[it_jobs::default]"
@@ -10,18 +10,17 @@
   "cookbook_locks": {
     "it_jobs": {
       "version": "0.1.0",
-      "identifier": "f96dda6e28f76648134440323f73e57aea352cf7",
-      "dotted_decimal_identifier": "70208054119429990.20287382178905971.252316078124279",
+      "identifier": "0a67fb6e180dff75cbc8fe7a0884ab9b257a9612",
+      "dotted_decimal_identifier": "2929079348628991.33156636398454916.188682837071378",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "https://github.com/Maksaud/maksaudeng54_Python_env_project_project.git",
-        "revision": "95b5749b50e6aa98623767edf15e8b8da74109c0",
+        "remote": null,
+        "revision": "0197b0cd77af21a7318dce8b7a179640d2a62257",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
-          "origin/dev",
           "origin/master"
         ]
       },

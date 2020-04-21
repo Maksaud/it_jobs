@@ -1,6 +1,179 @@
-I, [2020-04-16T11:30:34.852227 #3401]  INFO -- default-ubuntu-1804: -----> Destroying <default-ubuntu-1804>...
-I, [2020-04-16T11:30:42.166341 #3401]  INFO -- default-ubuntu-1804: ==> default: Forcing shutdown of VM...
-I, [2020-04-16T11:30:43.801636 #3401]  INFO -- default-ubuntu-1804: ==> default: Destroying VM and associated drives...
-I, [2020-04-16T11:30:44.368922 #3401]  INFO -- default-ubuntu-1804: ==> default: [vagrant-hostsupdater] Removing hosts
-I, [2020-04-16T11:30:44.912788 #3401]  INFO -- default-ubuntu-1804: Vagrant instance <default-ubuntu-1804> destroyed.
-I, [2020-04-16T11:30:44.915062 #3401]  INFO -- default-ubuntu-1804: Finished destroying <default-ubuntu-1804> (0m10.06s).
+I, [2020-04-21T11:46:52.474372 #13991]  INFO -- default-ubuntu-1804: -----> Cleaning up any prior instances of <default-ubuntu-1804>
+I, [2020-04-21T11:46:52.474809 #13991]  INFO -- default-ubuntu-1804: -----> Destroying <default-ubuntu-1804>...
+I, [2020-04-21T11:46:52.476380 #13991]  INFO -- default-ubuntu-1804: Finished destroying <default-ubuntu-1804> (0m0.00s).
+I, [2020-04-21T11:46:52.477285 #13991]  INFO -- default-ubuntu-1804: -----> Testing <default-ubuntu-1804>
+I, [2020-04-21T11:46:52.477957 #13991]  INFO -- default-ubuntu-1804: -----> Creating <default-ubuntu-1804>...
+I, [2020-04-21T11:46:53.718388 #13991]  INFO -- default-ubuntu-1804: Detected platform: ubuntu version 18.04 on x86_64. Instance Type: t2.micro. Default username: ubuntu (default).
+I, [2020-04-21T11:46:53.718585 #13991]  INFO -- default-ubuntu-1804: If you are not using an account that qualifies under the AWS
+free-tier, you may be charged to run these suites. The charge
+should be minimal, but neither Test Kitchen nor its maintainers
+are responsible for your incurred costs.
+
+I, [2020-04-21T11:46:53.952807 #13991]  INFO -- default-ubuntu-1804: Created automatic security group sg-06f191e19acaeac31
+I, [2020-04-21T11:46:54.353884 #13991]  INFO -- default-ubuntu-1804: Created automatic key pair kitchen-defaultubuntu1804-MAhmed-tcadminsAir4-2020-04-21T10:46:54Z-tpioi1lz
+I, [2020-04-21T11:46:55.404138 #13991]  INFO -- default-ubuntu-1804: Instance <i-07fc7d1a651fc72f3> requested.
+I, [2020-04-21T11:46:55.404337 #13991]  INFO -- default-ubuntu-1804: Polling AWS for existence, attempt 0...
+I, [2020-04-21T11:46:55.522182 #13991]  INFO -- default-ubuntu-1804: Attempting to tag the instance, 0 retries
+I, [2020-04-21T11:46:55.736723 #13991]  INFO -- default-ubuntu-1804: EC2 instance <i-07fc7d1a651fc72f3> created.
+I, [2020-04-21T11:46:55.736917 #13991]  INFO -- default-ubuntu-1804: Waited 0/300s for instance <i-07fc7d1a651fc72f3> volumes to be ready.
+I, [2020-04-21T11:47:01.058956 #13991]  INFO -- default-ubuntu-1804: Waited 5/300s for instance <i-07fc7d1a651fc72f3> volumes to be ready.
+I, [2020-04-21T11:47:01.977274 #13991]  INFO -- default-ubuntu-1804: Waited 0/300s for instance <i-07fc7d1a651fc72f3> to become ready.
+I, [2020-04-21T11:47:07.146095 #13991]  INFO -- default-ubuntu-1804: Waited 5/300s for instance <i-07fc7d1a651fc72f3> to become ready.
+I, [2020-04-21T11:47:12.436649 #13991]  INFO -- default-ubuntu-1804: Waited 10/300s for instance <i-07fc7d1a651fc72f3> to become ready.
+I, [2020-04-21T11:47:17.874289 #13991]  INFO -- default-ubuntu-1804: Waited 15/300s for instance <i-07fc7d1a651fc72f3> to become ready.
+I, [2020-04-21T11:47:24.870912 #13991]  INFO -- default-ubuntu-1804: Waited 20/300s for instance <i-07fc7d1a651fc72f3> to become ready.
+I, [2020-04-21T11:47:25.587791 #13991]  INFO -- default-ubuntu-1804: EC2 instance <i-07fc7d1a651fc72f3> ready (hostname: ec2-34-254-239-103.eu-west-1.compute.amazonaws.com).
+I, [2020-04-21T11:47:27.779970 #13991]  INFO -- default-ubuntu-1804: Waiting for SSH service on ec2-34-254-239-103.eu-west-1.compute.amazonaws.com:22, retrying in 3 seconds
+I, [2020-04-21T11:47:31.085425 #13991]  INFO -- default-ubuntu-1804: Waiting for SSH service on ec2-34-254-239-103.eu-west-1.compute.amazonaws.com:22, retrying in 3 seconds
+I, [2020-04-21T11:47:37.468582 #13991]  INFO -- default-ubuntu-1804: [SSH] Established
+I, [2020-04-21T11:47:38.567672 #13991]  INFO -- default-ubuntu-1804: Finished creating <default-ubuntu-1804> (0m46.09s).
+I, [2020-04-21T11:47:38.567927 #13991]  INFO -- default-ubuntu-1804: -----> Converging <default-ubuntu-1804>...
+I, [2020-04-21T11:47:38.573168 #13991]  INFO -- default-ubuntu-1804: Preparing files for transfer
+I, [2020-04-21T11:47:38.573533 #13991]  INFO -- default-ubuntu-1804: Installing cookbooks for Policyfile /Users/MAhmed/code/maksaudeng54_Python_env_project_project/cookbooks/it_jobs/Policyfile.rb using `chef install`
+I, [2020-04-21T11:47:40.886757 #13991]  INFO -- default-ubuntu-1804: Installing cookbooks from lock
+I, [2020-04-21T11:47:40.887636 #13991]  INFO -- default-ubuntu-1804: Installing it_jobs 0.1.0
+I, [2020-04-21T11:47:40.920695 #13991]  INFO -- default-ubuntu-1804: Preparing dna.json
+I, [2020-04-21T11:47:40.921741 #13991]  INFO -- default-ubuntu-1804: Exporting cookbook dependencies from Policyfile /var/folders/lc/0x_2pt817957_b2sljx9mkw00000gp/T/default-ubuntu-1804-sandbox-20200421-13991-1u7sttz...
+I, [2020-04-21T11:47:46.031945 #13991]  INFO -- default-ubuntu-1804: Exported policy 'it_jobs' to /var/folders/lc/0x_2pt817957_b2sljx9mkw00000gp/T/default-ubuntu-1804-sandbox-20200421-13991-1u7sttz
+I, [2020-04-21T11:47:46.032290 #13991]  INFO -- default-ubuntu-1804: 
+I, [2020-04-21T11:47:46.032456 #13991]  INFO -- default-ubuntu-1804: To converge this system with the exported policy, run:
+I, [2020-04-21T11:47:46.032559 #13991]  INFO -- default-ubuntu-1804:   cd /var/folders/lc/0x_2pt817957_b2sljx9mkw00000gp/T/default-ubuntu-1804-sandbox-20200421-13991-1u7sttz
+I, [2020-04-21T11:47:46.032656 #13991]  INFO -- default-ubuntu-1804:   chef-client -z
+I, [2020-04-21T11:47:46.066068 #13991]  INFO -- default-ubuntu-1804: Removing non-cookbook files before transfer
+I, [2020-04-21T11:47:46.068230 #13991]  INFO -- default-ubuntu-1804: Preparing validation.pem
+I, [2020-04-21T11:47:46.069574 #13991]  INFO -- default-ubuntu-1804: Preparing client.rb
+I, [2020-04-21T11:47:46.387300 #13991]  INFO -- default-ubuntu-1804: -----> Installing Chef install only if missing package
+I, [2020-04-21T11:47:46.387848 #13991]  INFO -- default-ubuntu-1804: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2020-04-21T11:47:46.388194 #13991]  INFO -- default-ubuntu-1804: Trying wget...
+I, [2020-04-21T11:47:46.431081 #13991]  INFO -- default-ubuntu-1804: Download complete.
+I, [2020-04-21T11:47:46.442524 #13991]  INFO -- default-ubuntu-1804: ubuntu 18.04 x86_64
+I, [2020-04-21T11:47:46.443594 #13991]  INFO -- default-ubuntu-1804: Getting information for chef stable  for ubuntu...
+I, [2020-04-21T11:47:46.470029 #13991]  INFO -- default-ubuntu-1804: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=18.04&m=x86_64
+I, [2020-04-21T11:47:46.470692 #13991]  INFO -- default-ubuntu-1804:   to file /tmp/install.sh.1572/metadata.txt
+I, [2020-04-21T11:47:46.471551 #13991]  INFO -- default-ubuntu-1804: trying wget...
+I, [2020-04-21T11:47:46.472185 #13991]  INFO -- default-ubuntu-1804: sha1	364861fb551058142b5dc01135abd49cb635762c
+I, [2020-04-21T11:47:46.473159 #13991]  INFO -- default-ubuntu-1804: sha256	b8b5eec2f77f01641812f8a6cb143b34a48e8e1d929bc83ba87685d8dece521e
+I, [2020-04-21T11:47:46.473934 #13991]  INFO -- default-ubuntu-1804: url	https://packages.chef.io/files/stable/chef/15.9.17/ubuntu/18.04/chef_15.9.17-1_amd64.deb
+I, [2020-04-21T11:47:46.474390 #13991]  INFO -- default-ubuntu-1804: version	15.9.17
+I, [2020-04-21T11:47:46.474681 #13991]  INFO -- default-ubuntu-1804: downloaded metadata file looks valid...
+I, [2020-04-21T11:47:46.474968 #13991]  INFO -- default-ubuntu-1804: downloading https://packages.chef.io/files/stable/chef/15.9.17/ubuntu/18.04/chef_15.9.17-1_amd64.deb
+I, [2020-04-21T11:47:46.475233 #13991]  INFO -- default-ubuntu-1804:   to file /tmp/install.sh.1572/chef_15.9.17-1_amd64.deb
+I, [2020-04-21T11:47:46.475484 #13991]  INFO -- default-ubuntu-1804: trying wget...
+I, [2020-04-21T11:47:46.882243 #13991]  INFO -- default-ubuntu-1804: Comparing checksum with sha256sum...
+I, [2020-04-21T11:47:47.001469 #13991]  INFO -- default-ubuntu-1804: 
+I, [2020-04-21T11:47:47.002645 #13991]  INFO -- default-ubuntu-1804: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2020-04-21T11:47:47.002794 #13991]  INFO -- default-ubuntu-1804: 
+I, [2020-04-21T11:47:47.002869 #13991]  INFO -- default-ubuntu-1804: You are installing a package without a version pin.  If you are installing
+I, [2020-04-21T11:47:47.002931 #13991]  INFO -- default-ubuntu-1804: on production servers via an automated process this is DANGEROUS and you will
+I, [2020-04-21T11:47:47.003000 #13991]  INFO -- default-ubuntu-1804: be upgraded without warning on new releases, even to new major releases.
+I, [2020-04-21T11:47:47.003051 #13991]  INFO -- default-ubuntu-1804: Letting the version float is only appropriate in desktop, test, development or
+I, [2020-04-21T11:47:47.003121 #13991]  INFO -- default-ubuntu-1804: CI/CD environments.
+I, [2020-04-21T11:47:47.003638 #13991]  INFO -- default-ubuntu-1804: 
+I, [2020-04-21T11:47:47.003724 #13991]  INFO -- default-ubuntu-1804: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2020-04-21T11:47:47.003773 #13991]  INFO -- default-ubuntu-1804: 
+I, [2020-04-21T11:47:47.003812 #13991]  INFO -- default-ubuntu-1804: Installing chef 
+I, [2020-04-21T11:47:47.003856 #13991]  INFO -- default-ubuntu-1804: installing with dpkg...
+I, [2020-04-21T11:47:47.076490 #13991]  INFO -- default-ubuntu-1804: Selecting previously unselected package chef.
+I, [2020-04-21T11:47:47.265842 #13991]  INFO -- default-ubuntu-1804: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56588 files and directories currently installed.)
+I, [2020-04-21T11:47:47.270677 #13991]  INFO -- default-ubuntu-1804: Preparing to unpack .../chef_15.9.17-1_amd64.deb ...
+I, [2020-04-21T11:47:47.271512 #13991]  INFO -- default-ubuntu-1804: Unpacking chef (15.9.17-1) ...
+I, [2020-04-21T11:47:52.167075 #13991]  INFO -- default-ubuntu-1804: Setting up chef (15.9.17-1) ...
+I, [2020-04-21T11:47:52.278656 #13991]  INFO -- default-ubuntu-1804: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2020-04-21T11:47:52.544117 #13991]  INFO -- default-ubuntu-1804: Transferring files to <default-ubuntu-1804>
+I, [2020-04-21T11:52:15.563767 #13991]  INFO -- default-ubuntu-1804: +---------------------------------------------+
+I, [2020-04-21T11:52:15.564285 #13991]  INFO -- default-ubuntu-1804: [32m✔[0m 2 product licenses accepted.
+I, [2020-04-21T11:52:15.590042 #13991]  INFO -- default-ubuntu-1804: +---------------------------------------------+
+I, [2020-04-21T11:52:16.055085 #13991]  INFO -- default-ubuntu-1804: Starting Chef Infra Client, version 15.9.17
+I, [2020-04-21T11:52:16.937004 #13991]  INFO -- default-ubuntu-1804: Creating a new client identity for default-ubuntu-1804 using the validator key.
+I, [2020-04-21T11:52:17.172454 #13991]  INFO -- default-ubuntu-1804: Using policy 'it_jobs' at revision 'f0b1d48e0603fd71fdfd626757f127bbfb8cca7c1b18df6b1735b710261b90ca'
+I, [2020-04-21T11:52:17.245739 #13991]  INFO -- default-ubuntu-1804: resolving cookbooks for run list: ["it_jobs::default@0.1.0 (0a67fb6)"]
+I, [2020-04-21T11:52:17.320223 #13991]  INFO -- default-ubuntu-1804: Synchronizing Cookbooks:
+I, [2020-04-21T11:52:17.386000 #13991]  INFO -- default-ubuntu-1804:   - it_jobs (0.1.0)
+I, [2020-04-21T11:52:17.415545 #13991]  INFO -- default-ubuntu-1804: Installing Cookbook Gems:
+I, [2020-04-21T11:52:17.440256 #13991]  INFO -- default-ubuntu-1804: Compiling Cookbooks...
+I, [2020-04-21T11:52:17.482769 #13991]  INFO -- default-ubuntu-1804: Converging 8 resources
+I, [2020-04-21T11:52:17.483083 #13991]  INFO -- default-ubuntu-1804: Recipe: it_jobs::default
+I, [2020-04-21T11:52:17.483789 #13991]  INFO -- default-ubuntu-1804:   * apt_update[update_sources] action update
+I, [2020-04-21T11:52:17.484300 #13991]  INFO -- default-ubuntu-1804:     - force update new lists of packages
+I, [2020-04-21T11:52:17.484712 #13991]  INFO -- default-ubuntu-1804:     * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2020-04-21T11:52:17.485062 #13991]  INFO -- default-ubuntu-1804:     * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2020-04-21T11:52:17.517231 #13991]  INFO -- default-ubuntu-1804:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2020-04-21T11:52:25.271469 #13991]  INFO -- default-ubuntu-1804:     * execute[apt-get -q update] action run
+I, [2020-04-21T11:52:25.271879 #13991]  INFO -- default-ubuntu-1804:       - execute ["apt-get", "-q", "update"]
+I, [2020-04-21T11:52:25.324626 #13991]  INFO -- default-ubuntu-1804:   
+I, [2020-04-21T11:53:21.515738 #13991]  INFO -- default-ubuntu-1804:   * apt_package[packer] action install
+I, [2020-04-21T11:53:21.516568 #13991]  INFO -- default-ubuntu-1804:     - install version 1.0.4+dfsg-1 of package packer
+I, [2020-04-21T11:53:58.574240 #13991]  INFO -- default-ubuntu-1804:   * apt_package[python3-pip] action install
+I, [2020-04-21T11:53:58.575204 #13991]  INFO -- default-ubuntu-1804:     - install version 9.0.1-2.3~ubuntu1.18.04.1 of package python3-pip
+I, [2020-04-21T11:53:58.607006 #13991]  INFO -- default-ubuntu-1804:   * remote_directory[/home/ubuntu/requirements] action create
+I, [2020-04-21T11:53:58.607685 #13991]  INFO -- default-ubuntu-1804:     - create new directory /home/ubuntu/requirements
+I, [2020-04-21T11:53:58.608615 #13991]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
+I, [2020-04-21T11:53:58.609198 #13991]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
+I, [2020-04-21T11:53:58.609726 #13991]  INFO -- default-ubuntu-1804:   Recipe: <Dynamically Defined Resource>
+I, [2020-04-21T11:53:58.610193 #13991]  INFO -- default-ubuntu-1804:     * cookbook_file[/home/ubuntu/requirements/requirements.txt] action create
+I, [2020-04-21T11:53:58.610615 #13991]  INFO -- default-ubuntu-1804:       - create new file /home/ubuntu/requirements/requirements.txt
+I, [2020-04-21T11:53:58.610994 #13991]  INFO -- default-ubuntu-1804:       - update content in file /home/ubuntu/requirements/requirements.txt from none to dba311
+I, [2020-04-21T11:53:58.611519 #13991]  INFO -- default-ubuntu-1804:       --- /home/ubuntu/requirements/requirements.txt	2020-04-21 10:53:58.597343343 +0000
+I, [2020-04-21T11:53:58.612379 #13991]  INFO -- default-ubuntu-1804:       +++ /home/ubuntu/requirements/.chef-requirements20200421-1673-1mm1ur4.txt	2020-04-21 10:53:58.597343343 +0000
+I, [2020-04-21T11:53:58.612786 #13991]  INFO -- default-ubuntu-1804:       @@ -1 +1,20 @@
+I, [2020-04-21T11:53:58.613319 #13991]  INFO -- default-ubuntu-1804:       +atomicwrites==1.3.0
+I, [2020-04-21T11:53:58.613687 #13991]  INFO -- default-ubuntu-1804:       +attrs==19.1.0
+I, [2020-04-21T11:53:58.614118 #13991]  INFO -- default-ubuntu-1804:       +beautifulsoup4==4.8.0
+I, [2020-04-21T11:53:58.614589 #13991]  INFO -- default-ubuntu-1804:       +certifi==2019.6.16
+I, [2020-04-21T11:53:58.614901 #13991]  INFO -- default-ubuntu-1804:       +chardet==3.0.4
+I, [2020-04-21T11:53:58.615480 #13991]  INFO -- default-ubuntu-1804:       +idna==2.8
+I, [2020-04-21T11:53:58.615861 #13991]  INFO -- default-ubuntu-1804:       +importlib-metadata==0.19
+I, [2020-04-21T11:53:58.616436 #13991]  INFO -- default-ubuntu-1804:       +more-itertools==7.2.0
+I, [2020-04-21T11:53:58.617373 #13991]  INFO -- default-ubuntu-1804:       +packaging==19.1
+I, [2020-04-21T11:53:58.619035 #13991]  INFO -- default-ubuntu-1804:       +pluggy==0.12.0
+I, [2020-04-21T11:53:58.619794 #13991]  INFO -- default-ubuntu-1804:       +py==1.8.0
+I, [2020-04-21T11:53:58.621565 #13991]  INFO -- default-ubuntu-1804:       +pyparsing==2.4.2
+I, [2020-04-21T11:53:58.622691 #13991]  INFO -- default-ubuntu-1804:       +pytest==5.1.0
+I, [2020-04-21T11:53:58.625220 #13991]  INFO -- default-ubuntu-1804:       +requests==2.22.0
+I, [2020-04-21T11:53:58.626051 #13991]  INFO -- default-ubuntu-1804:       +six==1.12.0
+I, [2020-04-21T11:53:58.637283 #13991]  INFO -- default-ubuntu-1804:       +soupsieve==1.9.2
+I, [2020-04-21T11:53:58.638241 #13991]  INFO -- default-ubuntu-1804:       +urllib3==1.25.3
+I, [2020-04-21T11:53:58.639609 #13991]  INFO -- default-ubuntu-1804:       +wcwidth==0.1.7
+I, [2020-04-21T11:53:58.640948 #13991]  INFO -- default-ubuntu-1804:       +zipp==0.5.2
+I, [2020-04-21T11:53:58.642106 #13991]  INFO -- default-ubuntu-1804:       - change mode from '' to '0644'
+I, [2020-04-21T11:53:58.642418 #13991]  INFO -- default-ubuntu-1804:   
+I, [2020-04-21T11:53:58.642691 #13991]  INFO -- default-ubuntu-1804: Recipe: it_jobs::default
+I, [2020-04-21T11:54:02.809905 #13991]  INFO -- default-ubuntu-1804:   * bash[installing_from_requirements.txt] action run
+I, [2020-04-21T11:54:02.811043 #13991]  INFO -- default-ubuntu-1804:     - execute "bash"  "/tmp/chef-script20200421-1673-1dynp58"
+I, [2020-04-21T11:54:02.860541 #13991]  INFO -- default-ubuntu-1804:   * directory[/home/vagrant] action create
+I, [2020-04-21T11:54:02.860896 #13991]  INFO -- default-ubuntu-1804:     - create new directory /home/vagrant
+I, [2020-04-21T11:54:02.861359 #13991]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
+I, [2020-04-21T11:54:02.861853 #13991]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
+I, [2020-04-21T11:54:02.862163 #13991]  INFO -- default-ubuntu-1804:   * directory[/home/vagrant/Downloads] action create
+I, [2020-04-21T11:54:02.878676 #13991]  INFO -- default-ubuntu-1804:     - create new directory /home/vagrant/Downloads
+I, [2020-04-21T11:54:02.879353 #13991]  INFO -- default-ubuntu-1804:     - change mode from '' to '0777'
+I, [2020-04-21T11:54:02.879771 #13991]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
+I, [2020-04-21T11:54:02.880307 #13991]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
+I, [2020-04-21T11:54:02.880683 #13991]  INFO -- default-ubuntu-1804:   * directory[/home/ubuntu/Downloads] action create
+I, [2020-04-21T11:54:02.880984 #13991]  INFO -- default-ubuntu-1804:     - create new directory /home/ubuntu/Downloads
+I, [2020-04-21T11:54:02.881283 #13991]  INFO -- default-ubuntu-1804:     - change mode from '' to '0777'
+I, [2020-04-21T11:54:02.881658 #13991]  INFO -- default-ubuntu-1804:     - change owner from '' to 'root'
+I, [2020-04-21T11:54:02.881968 #13991]  INFO -- default-ubuntu-1804:     - change group from '' to 'root'
+I, [2020-04-21T11:54:02.906816 #13991]  INFO -- default-ubuntu-1804: 
+I, [2020-04-21T11:54:02.908308 #13991]  INFO -- default-ubuntu-1804: Running handlers:
+I, [2020-04-21T11:54:02.910617 #13991]  INFO -- default-ubuntu-1804: Running handlers complete
+I, [2020-04-21T11:54:02.910911 #13991]  INFO -- default-ubuntu-1804: Chef Infra Client finished, 10/13 resources updated in 01 minutes 47 seconds
+I, [2020-04-21T11:54:02.923803 #13991]  INFO -- default-ubuntu-1804: Downloading files from <default-ubuntu-1804>
+I, [2020-04-21T11:54:02.932369 #13991]  INFO -- default-ubuntu-1804: Finished converging <default-ubuntu-1804> (6m24.36s).
+I, [2020-04-21T11:54:02.932773 #13991]  INFO -- default-ubuntu-1804: -----> Setting up <default-ubuntu-1804>...
+I, [2020-04-21T11:54:02.941875 #13991]  INFO -- default-ubuntu-1804: Finished setting up <default-ubuntu-1804> (0m0.00s).
+I, [2020-04-21T11:54:02.942256 #13991]  INFO -- default-ubuntu-1804: -----> Verifying <default-ubuntu-1804>...
+I, [2020-04-21T11:54:04.705863 #13991]  INFO -- default-ubuntu-1804: Loaded tests from {:path=>".Users.MAhmed.code.maksaudeng54_Python_env_project_project.cookbooks.it_jobs.test.integration.default"} 
+I, [2020-04-21T11:54:10.765808 #13991]  INFO -- default-ubuntu-1804: Finished verifying <default-ubuntu-1804> (0m7.82s).
+I, [2020-04-21T11:54:10.768207 #13991]  INFO -- default-ubuntu-1804: -----> Destroying <default-ubuntu-1804>...
+I, [2020-04-21T11:54:11.041441 #13991]  INFO -- default-ubuntu-1804: Waited 0/300s for instance <i-07fc7d1a651fc72f3> to terminate.
+I, [2020-04-21T11:54:16.161326 #13991]  INFO -- default-ubuntu-1804: Waited 5/300s for instance <i-07fc7d1a651fc72f3> to terminate.
+I, [2020-04-21T11:54:21.422320 #13991]  INFO -- default-ubuntu-1804: Waited 10/300s for instance <i-07fc7d1a651fc72f3> to terminate.
+I, [2020-04-21T11:54:26.726829 #13991]  INFO -- default-ubuntu-1804: Waited 15/300s for instance <i-07fc7d1a651fc72f3> to terminate.
+I, [2020-04-21T11:54:31.952082 #13991]  INFO -- default-ubuntu-1804: Waited 20/300s for instance <i-07fc7d1a651fc72f3> to terminate.
+I, [2020-04-21T11:54:37.141897 #13991]  INFO -- default-ubuntu-1804: Waited 25/300s for instance <i-07fc7d1a651fc72f3> to terminate.
+I, [2020-04-21T11:54:37.350467 #13991]  INFO -- default-ubuntu-1804: EC2 instance <i-07fc7d1a651fc72f3> destroyed.
+I, [2020-04-21T11:54:37.350618 #13991]  INFO -- default-ubuntu-1804: Removing automatic security group sg-06f191e19acaeac31
+I, [2020-04-21T11:54:37.639995 #13991]  INFO -- default-ubuntu-1804: Removing automatic key pair kitchen-defaultubuntu1804-MAhmed-tcadminsAir4-2020-04-21T10:46:54Z-tpioi1lz
+I, [2020-04-21T11:54:37.788316 #13991]  INFO -- default-ubuntu-1804: Finished destroying <default-ubuntu-1804> (0m27.02s).
+I, [2020-04-21T11:54:37.789271 #13991]  INFO -- default-ubuntu-1804: Finished testing <default-ubuntu-1804> (7m45.31s).

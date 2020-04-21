@@ -1,0 +1,7 @@
+DEPENDENCIES
+  it_jobs
+    git: git@github.com:Maksaud/it_jobs.git
+    revision: 0197b0cd77af21a7318dce8b7a179640d2a62257
+
+GRAPH
+  it_jobs (0.1.0)

@@ -9,7 +9,12 @@ end
 
 package 'packer'
 
+
+package 'default-jre'
+package 'default-jdk'
+
 package 'python3-pip'
+
 
 remote_directory '/home/ubuntu/requirements' do
   user 'root'
@@ -25,6 +30,14 @@ bash 'installing_from_requirements.txt' do
   sudo pip3 install -r /home/ubuntu/requirements/requirements.txt
   EOH
 end
+
+directory '/home/vagrant' do
+  owner 'root'
+  user 'root'
+  group 'root'
+  action :create
+end
+
 # For Chef Tests
 directory '/home/vagrant/Downloads' do
   owner 'root'
